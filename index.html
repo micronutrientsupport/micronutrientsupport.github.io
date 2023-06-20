@@ -16,7 +16,9 @@
         }
         
         .logo {
-          font-family: Quicksand
+          position: absolute;
+          top: 0;
+          left: 0;
         }
         
         .logo img {
@@ -32,7 +34,13 @@
           text-decoration: none;
           display: inline-block;
           font-family: Quicksand;
-          margin-top: -2em;
+        }
+
+        .redirect {
+          display: flex;
+          flex-direction: column;
+          justify-contents: space-around;
+          text-align: center;
         }
     </style>
   </head>
@@ -42,8 +50,10 @@
   <a href="https://micronutrient.support"><img src="https://micronutrient.support/images/logo.svg" alt="Micronutrient Action Policy Support"></a>
 </div>
 <div class="container">
-  Redirecting you to the MAPS Tool in 5 seconds...
-  <img class="africa" src="https://maps.micronutrient.support/assets/images/webp/study-map-min.webp" />
-  If you are not redirected automatically:
-  <a class="button" href="https://maps.micronutrient.support">Click here to explore the MAPS Tool</a>
+  <div class="redirect">
+    <p>Redirecting you to the MAPS Tool in 10 seconds...</p>
+    <img class="africa" src="https://maps.micronutrient.support/assets/images/webp/study-map-min.webp" />
+    <p>If you are not redirected automatically:</p>
+    <a class="button" href="https://maps.micronutrient.support">Click here to explore the MAPS Tool</a>
+  </div>
 </div>
